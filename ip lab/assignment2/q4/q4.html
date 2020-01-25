@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>PS International Higher Secondary School</title>
+<script type="text/javascript">
+function h1()
+{
+document.getElementById("frame4").innerHTML='<object type="text/html" data="home.html" width="78%" height="100%">';
+}
+function h2()
+{
+document.getElementById("frame4").innerHTML='<object type="text/html" data="fee.html" width="78%" height="100%">';
+}
+function h3()
+{
+document.getElementById("frame4").innerHTML='<object type="text/html" data="ach.html" width="78%" height="100%">';
+}
+</script>
+<style>
+a
+{
+font-size:24px;
+}
+a:link
+{
+color:red;
+}
+a:visited
+{
+color:purple;
+}
+a:hover
+{
+color:blue;
+}
+a:active
+{
+color:yellow;
+}
+
+#frame1
+{
+border:5px solid blue;
+height:20%;
+width:100%;
+}
+#frame3
+{
+height:80%;
+width:20%;
+border:5px solid blue;
+position:relative;
+float:left;
+}
+#frame4
+{
+width:100%;
+height:80%;
+border:5px solid blue;
+}
+#p1
+{
+font-family:sans-serif;
+font-size:40pt;
+text-align:center;
+top:100px;
+}
+#i1
+{
+position:relative;
+top:20px;
+float:left;
+}
+</style>
+</head>
+<body>
+
+<div id="frame1">
+<img src="logo.jpg" id="i1">
+<p id="p1"> PS International Higher Secondary School </p>
+</div>
+<div id="frame2">
+<div id="frame3">
+<a onclick="h1()" style="text-decoration:underline">Home Page</a><br>
+<a onclick="h2()" style="text-decoration:underline">Fee Structure</a><br>
+<a >Academics</a><br>
+<a onclick="h3()" style="text-decoration:underline">Achievements</a><br>
+<a href="res.html">Results</a><br>
+<a href="contact.html">Contact us</a>
+</div>
+<div id="frame4">
+</div>
+</div>
+</body>
+</html>

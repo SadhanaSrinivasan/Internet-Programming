@@ -1,0 +1,102 @@
+<html>
+<head>
+	<style>
+		.boxed {
+  			border: 1px solid green ;
+			color: blue
+			}
+		.redcol{color: red}
+		.column {
+  			float: left;
+ 			width: 50%;
+			}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+	</style>
+</head>
+<body>
+<center>
+		<div class="boxed">
+				<h1>COMPLAINT REGISTRATION FORM</h1>
+		</div>
+		
+</center>
+<div>
+	<h4>Points to remember</h4>
+	You can use this form to register complaints<br>
+	False Complaints are subject to prosecution under IPC<br>
+	Fields indicated in <span class="redcol">red</span> colour are mandatory.<br>
+</div>
+
+<form action="action_page.php">
+	<div class="container">
+		<br><label class="redcol"><b> District </b></label><br>
+		<select>
+			<option value="thirunelveli">Thirunelveli</option>
+			<option value="Chennai">Chennai</option>
+			<option value="Dharmapuri">Dharmapuri</option>
+  		</select> 
+		<hr>
+			<label for="Name" class="redcol">Name</label>
+			<input type="text" pattern="[a-zA-Z]+" placeholder="Enter Name" name="name" required>
+			<br>
+			<label >Gender</label>			
+			<select>
+			<option value="Female">Female</option>
+			<option value="Male">Male</option>
+			<option value="Transgender">Transgender</option>
+  			</select> 
+			<br>			
+			<label for="Date Of Birth">Date Of Birth</label>
+			<input type="Date of Birth" placeholder="dd/mm/yyyy" name="dob">
+			<br>
+			<label for="Address">Address</label>
+			<textarea rows="4" cols="30" type="Address" placeholder="Enter Address"></textarea>
+			<br>
+			<label for="mobile">mobile</label>
+			<input type="text" placeholder="Enter mobile number without prefix" name="mobile number">
+			<br>
+			<label for="email" class="redcol">Email</label>
+			<input type="text" placeholder="Enter Email" name="email" required>
+			<br>
+		<hr>
+	</div>
+	<div>	
+	<p>
+		<label>Subject</label>
+		<select>
+			<option selected="selected">Transport Dept</option>
+			<option>Police Department</option>
+			<option>Fire Service</option>
+			<option>Corporation</option>
+		</select>
+	</p>
+	<p>
+		<label>Date of Occurrence</label>
+		<input type="date" name="event">
+	</p>
+	<p>
+	<label>Place of occurrence</label>
+		<textarea rows="2" cols="50" name="place" form="reg" placeholder="Place of occurrence [Max 200 words allowed]..."></textarea>
+	</p>
+	<p>
+	<label>Description</label>
+	<textarea rows="2" cols="50" name="desc" form="reg" placeholder="Enter description"></textarea>
+	</p>
+	<p>
+	    Select file to upload:
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+	</p>
+	<p>
+	    <button>
+		     Register
+	    </button>
+</p>
+</div>
+</form>
+</body>
+</html>
